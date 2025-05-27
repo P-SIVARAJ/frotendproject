@@ -1,0 +1,87 @@
+ol li::marker{
+    color:brown;
+    font-weight: bold;
+}
+ul li::marker{
+    color: brown;
+    font-weight: bold;
+}
+.image{
+    margin-top: 40px;
+    margin-left: 30px;
+    margin-right: 40px;
+    width: 570px;
+    height: 250px;
+    border-radius: 10px;
+}
+.back{
+    background-color: white;
+    border-radius: 20px;
+     width: 650px;
+      height: 1650px;
+}
+.h1{
+     margin-left: 20px;
+    font-family: sans-serif;
+    margin-top: 40px;
+    text-align: left;
+}
+.pre1{
+     margin-left: 20px;
+    font-family: segoe ui;
+     text-align: left;
+}
+.back1{
+    border-radius: 10px;
+    background-color: rgb(241, 211, 240);
+    text-align: left;
+    width: 600px;
+    height: 150px;
+    border-radius: 10px;
+}
+.h3{
+    color:rgb(100, 34, 75) ;
+    margin-top: 40px;
+     margin-left: 30px;
+     font-family: sans-serif;
+     
+}
+.div{
+     margin-top: 20px;
+     margin-left: 20px;
+}
+.li2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.in{
+    font-family: segoe ui;
+     margin-left: 20px;
+    text-align: left;
+    color: rgb(87, 56, 10);
+}
+.c1{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.c2{
+     margin-top: 10px;
+    margin-bottom: 10px;
+}
+.s1{
+    font-family: segoe ui; 
+     margin-left: 10px;
+    text-align: left;
+}
+  table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        td {
+            padding: 15px ;
+            border-bottom: 1px solid #ccc;
+        }
+        td:last-child {
+            font-weight: bold;
+            color: saddlebrown
+        }
