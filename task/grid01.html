@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Grid-Layout</title>
+  <style>
+    body {
+      
+      font-family: sans-serif;
+      display: flex;
+      justify-content: center;
+      padding: 40px;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 8px;
+      width: 600px;
+    }
+
+    .box {
+      background-color: #9acd32;
+      color: white;
+      text-align: center;
+      font-weight: bold;
+      padding: 12px 0;
+      border-radius: 4px;
+    }
+    .s1 {
+         grid-column: span 12;
+         }
+
+    .s2{ 
+        grid-column: span 6; 
+    }
+    .s3{ 
+        grid-column: span 6; 
+    }
+    .s4, .s5, .s6{ 
+        grid-column: span 4;
+     }
+    .s7, .s8, .s9, .s10{
+         grid-column: span 3; 
+        }
+    .s11, .s12, .s13, .s14, .s15, .s16{ 
+        grid-column: span 2;
+     }
+    .s17, .s18, .s19, .s20, .s21, .s22,
+    .s23, .s24, .s25, .s26, .s27, .s28 { 
+        grid-column: span 1; 
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box s1">1</div>
+    <div class="box s2">2</div>
+    <div class="box s3">3</div>
+    <div class="box s4">4</div>
+    <div class="box s5">5</div>
+    <div class="box s6">6</div>
+    <div class="box s7">7</div>
+    <div class="box s8">8</div>
+    <div class="box s9">9</div>
+    <div class="box s10">10</div>
+    <div class="box s11">11</div>
+    <div class="box s12">12</div>
+    <div class="box s13">13</div>
+    <div class="box s14">14</div>
+    <div class="box s15">15</div>
+    <div class="box s16">16</div>
+    <div class="box s17">17</div>
+    <div class="box s18">18</div>
+    <div class="box s19">19</div>
+    <div class="box s20">20</div>
+    <div class="box s21">21</div>
+    <div class="box s22">22</div>
+    <div class="box s23">23</div>
+    <div class="box s24">24</div>
+    <div class="box s25">25</div>
+    <div class="box s26">26</div>
+    <div class="box s27">27</div>
+    <div class="box s28">28</div>
+  </div>
+</body>
+</html>
