@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Css Grid </title>
+  <style>
+    *{
+      padding:0;
+      margin:0;
+      box-sizing: border-box;
+      font-family: verdana;
+    }
+    .container{
+      border:2px solid black;
+      width:60%;
+      height:80%;
+      margin:0,auto;
+      display:grid;
+      grid-template-columns: repeat(5,1fr) ;
+      /*grid-template-rows: repeat(2,1fr);*/
+      gap:10px;
+
+     
+    }
+    .box{
+      grid-template-columns: repeat(5,1fr) ;
+      grid-template-rows: repeat(2,1fr);
+      box-sizing: border-box;
+    }
+    .heading{
+      grid-column:span 5;
+      align-items: center;
+      justify-items: center;
+      text-transform: uppercase;
+
+    }
+    .nav{
+      background-color: rgb(224, 223, 221);
+      display:grid;
+     
+ 
+    }
+    .main{
+      grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+      grid-template-rows: repeat(auto-fit,minmax(200px,1fr));
+      background-color: rgb(235, 233, 231);
+     
+     
+    }
+    
+  </style>
+  
+</head>
+<body>
+  <div class="container">
+    <header class="heading">Introduction to Css Grid</header>
+    <nav class="nav">Navigation:
+      <ul>
+        <li>Nav Link 1</li>
+        <li>Nav Link 2</li>
+        <li>Nav Link 3</li>
+        <li>Nav Link 4</li>
+        <li>Nav Link 5</li>
+        <li>Nav Link 6</li>
+      </ul>
+    </nav>
+    <main class="main">
+      <article class="box">
+        <h2>Heading</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+          Nemo ullam dolor, architecto amet ipsum eos quod minima 
+          assumenda, earum quos ut facere eligendi quis dolorum optio
+           deserunt molestiae doloremque incidunt?
+        </p>
+        <p>read more>></p>
+      </article>
+      <article class="box">
+        <h2>Heading</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+           Nemo ullam dolor, architecto amet ipsum eos quod minima
+            assumenda, earum quos ut facere eligendi quis dolorum optio 
+            deserunt molestiae doloremque incidunt?
+        </p>
+        <p>read more>></p>
+      </article>
+       <article class="box">
+        <h2>Heading</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+           Nemo ullam dolor, architecto amet ipsum eos quod minima 
+           assumenda, earum quos ut facere eligendi quis dolorum optio
+            deserunt molestiae doloremque incidunt?
+        </p>
+        <p>read more>></p>
+      </article>
+       <article class="box">
+        <h2>Heading</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+           Nemo ullam dolor, architecto amet ipsum eos quod minima 
+           assumenda, earum quos ut facere eligendi quis dolorum optio
+            deserunt molestiae doloremque incidunt?
+        </p>
+        <p>read more>></p>
+      </article>
+       <article class="box">
+        <h2>Heading</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+           Nemo ullam dolor, architecto amet ipsum eos quod minima 
+           assumenda, earum quos ut facere eligendi quis dolorum optio
+            deserunt molestiae doloremque incidunt?
+        </p>
+        <p>read more>></p>
+      </article>
+       <article class="box">
+        <h2>Heading</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+           Nemo ullam dolor, architecto amet ipsum eos quod minima
+            assumenda, earum quos ut facere eligendi quis dolorum optio
+             deserunt molestiae doloremque incidunt?
+        </p>
+        <p>read more>></p>
+      </article>
+       <article class="box">
+        <h2>Heading</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+          Nemo ullam dolor, architecto amet ipsum eos quod minima 
+          assumenda, earum quos ut facere eligendi quis dolorum optio
+           deserunt molestiae doloremque incidunt?
+        </p>
+        <p>read more>></p>
+      </article>
+       <article class="box">
+        <h2>Heading</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+           Nemo ullam dolor, architecto amet ipsum eos quod minima 
+           assumenda, earum quos ut facere eligendi quis dolorum optio
+            deserunt molestiae doloremque incidunt?
+        </p>
+        <p>read more>></p>
+      </article>
+
+
+
+
+
+    </main>
+  </div>
+</body>
+</html>
