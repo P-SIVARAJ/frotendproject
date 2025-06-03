@@ -27,11 +27,9 @@ h2{
     color: rgb(51, 40, 40);
 }
 h1:hover{
-    cursor: pointer;
     color: rgb(255, 0, 0);
 }
 h2:hover{
-    cursor: pointer;
     color: rgb(255, 0, 0);
 }
 nav{
