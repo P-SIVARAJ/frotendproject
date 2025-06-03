@@ -1,0 +1,24 @@
+body{
+    box-sizing: border-box;
+
+}
+.container{
+    background-color: rgb(240, 202, 158);
+    padding: 10px;
+    margin: 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.items{
+    background-color: rgb(245, 91, 142);
+    color: bisque;
+    font-size: 20px;
+    padding: 20px;
+}
+.item {
+
+}
