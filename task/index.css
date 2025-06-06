@@ -2,9 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
 }
-
-
 .container{
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-size: larger;
@@ -12,19 +11,21 @@
     width: 100%;
     height: 100dvb;
  background-image:url(./imgsiva/Pain.webp);
+   opacity: 1;
+/* background-image:url(./imgsiva/img1.jpg);*/
  background-size: cover;
  background-position: center;
 
 
 }
 a{
-    color: rgb(51, 40, 40);
+    color: rgb(59, 59, 59);
 }
 h1{
-    color: rgb(51, 40, 40);
+    color: rgb(59, 59, 59);
 }
 h2{
-    color: rgb(51, 40, 40);
+    color: rgb(59, 59, 59);
 }
 h1:hover{
     color: rgb(255, 0, 0);
@@ -32,11 +33,15 @@ h1:hover{
 h2:hover{
     color: rgb(255, 0, 0);
 }
+h1:hover{
+    color: rgb(255, 0, 0);
+}
 nav{
-    border: 2px solid rgb(56, 51, 51);
+    border: 2px solid rgb(59, 59, 59);
     width: 500px;
     align-items: end;
 }
 nav :hover{
-      color: rgb(255, 17, 0);
+      color: rgba(99, 57, 116,1);
+    
 }
