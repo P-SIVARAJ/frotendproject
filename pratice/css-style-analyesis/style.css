@@ -1,0 +1,32 @@
+ 
+ body{
+    background-color: bisque;
+    margin: 0px;
+    border: 0px;
+}
+.container{
+    background-color: azure;
+}
+h1{
+    color: blue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    cursor: pointer;
+   text-shadow: 2px 2px 5px rgb(255, 0, 0);
+    
+}
+h1:hover{
+    color: rgb(10, 245, 1);
+    /*background-color: rgb(255, 230, 2);*/
+   
+
+}
+pre{
+    background-color: beige;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     color: rgb(255, 0, 200);
+   text-shadow: 2px 2px 5px rgb(48, 45, 45);
+}
+pre:hover{
+    color: blueviolet;
+}
+
