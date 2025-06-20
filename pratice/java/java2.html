@@ -21,11 +21,10 @@ console.log(value); // ' '," "
 const pi = 3.14; // values should not be change in future
 
 console.log(pi);
- 
+
 value = "5"; // global (no security) //5
 console.log(typeof value);
 // alert(value)
-
 
 value = Number(6); //6
 num = Number(6);
@@ -65,7 +64,7 @@ Math.ceil(); // round up
 
 // function - a block of code , which is reusable by calling its name
 function sayMyName(name) {
-  let greeting = Hi ${name} , welcome to my webpage; // template literals
+  let greeting = Hi $ {name} , welcome to my webpage; // template literals
   return greeting;
 }
 function add(a, b) {
@@ -150,7 +149,6 @@ const intro = (person) => {
   console.log(person.email);
 };
 
-
 let person = {
   email: "abcd@gamil.com",
   ph: "98765345678",
@@ -159,6 +157,181 @@ let person = {
 intro(person);
 
 console.log(introducer("Hari", "white"));
+// loops
+// array[0] index
+let animals = ["dog", "cat", "tiger", "lion"];
+animals[0]; // dog
+animals[1]; // cat
+animals[2]; //tiger
+animals[3]; //lion
+
+// for of loop
+
+for (const animal of animals) {
+  // for(let i=0; i<n; i++){animal = animals[2]}
+
+  console.log(animal);
+}
+
+// for in loop
+
+for (let animal in animals) {
+  console.log(animal);
+}
+
+// for loop
+
+input = [2, 4, 5, 6]; // op =>  4, 8 ,10 , 12 =>output
+
+const triple = (list) => {
+  let output = [];
+
+  for (const num of list) {
+    output.push(num * 3);
+  }
+
+  return output;
+};
+
+console.log(input[3]);
+
+console.log("Output is ", triple(input));
+
+console.log(4 in input); // chehcks the index
+
+let chocolateBox = {
+  diarymilk: 20,
+  milkybar: 30,
+  kitkat: 20,
+};
+
+console.log("5star" in chocolateBox);
+
+chocName = "";
+
+if (chocName in chocolateBox) {
+  // alert("Chcolate is in the box !! ")
+} else {
+  // alert("no choclate ia avaialble")
+}
+
+// let sentence = prompt("Enter the sentence !!");
+
+// const countTheCharacters = (sentence) => {
+//   let result = 0;
+
+//   for (letter in sentence) {
+//     //0 1 2 3 4 ....... 18
+//     result = Number(letter) + 1;
+//   }
+
+//   return result;
+// };
+
+// alert(countTheCharacters(sentence));
+// console.log("Length of the sentence is :", sentence.length);
+
+// Frequency of letters --- haha => h:2 a:2
+
+// let word = prompt("Enter the word"); // h in freq  a in freq   // freq{ h : 2 a:2}
+
+// const frequency = (word) => {
+//   let freq = {};
+//   for (letter of word) {
+//     if (letter in freq) {
+//       freq[letter]++; // freq[letter]=freq[letter]+1
+//     } else {
+//       freq[letter] = 1;
+//     }
+//   }
+
+//   return freq;
+// };
+// console.log(frequency(word));
+
+//word frequency -- ha ha ha : 2 , this is this pointer ==> this:2 , is : 1 pointer :1
+
+// let words = prompt("Enter the sentence to find frequency");
+
+// const wordFrequency = (words) => {
+//   let wordsArray = words.split(" ");
+
+//   return frequency(wordsArray);
+// };
+
+// console.log(wordFrequency(words));
+
+// Advanced level of functions
+// map()
+// filter ()
+//reduce()
+
+// [1,2,3,4,5] => [2,4,6,8,10]
+
+let list = [1, 2, 3, 4, 5];
+let fruit =["mango", "apple"]
+
+let name = "Lingesh";
+
+let product =  {
+    name: "Mobile Phone",
+    price: "50,000",
+    model: "Icare",
+  }
+
+  console.log("product : ",product.price)
+
+let productDetails = [
+  {
+    name: "Mobile Phone",
+    price: "50,000",
+    model: "Icare",
+  },
+  {
+    name: "Car",
+    price: "50,00,000",
+    model: "Suzuki XL",
+  },
+  {
+    name: "Bike",
+    price: "1,00,000,000",
+    model: "duke 200",
+  },
+];
+
+productDetails.map((product) => {
+  let intro = The name of the product is ${product.name} . The price of the product is ${product.price}
+
+  console.log("Product Intro :",intro)
+}); // product = {name :"mobile" , price , model}
+
+const print = (a, b) => a + b; // return a+b ; // arrow function // implicit return
+
+console.log("the sum is : ", print(2, 3));
+
+let newList = list.map((num) => num * 2); // return num
+/**
+ * newList[  ]
+ * [1,2,3,4,5].map=> num =1 => return num=1 // newList [1, ]
+ *  num =2 => return num=2 // newList [1,2 ]
+ * num =3 => return num=3 // newList [1,2 , 3]
+ *  num =4 => return num=4 // newList [1,2 , 3 , 4]
+ * num =5 => return num=5 // newList [1,2 , 3 , 4 , 5]
+ *
+ *
+ */
+
+console.log("New List is : ", newList); //1 2 3 4 5
+/**
+ * traversing - loop from start to end
+ * arrayname.map(variable =>{ * code block })
+ * 1 => printing...1
+ * 2 => printing ..2
+ *
+ *
+ *
+ * end of array 5 => printing ..5
+ */
 </script>
 </body>
 </html>

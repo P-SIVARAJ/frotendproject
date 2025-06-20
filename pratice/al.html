@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Toss the coin</p>
+    <button onclick="
+    random=(Math.floor(Math.random()*2))
+    console.log(random)
+    if(random===0){
+        console.log('same')
+    }
+    else if(random===1){ 
+        console.log('your toss is tile , but my toss head')
+    }
+    alert('Your toss is head')">head</button>
+    <button  onclick="
+    random=(Math.floor(Math.random()*2))
+    console.log(random)
+    if(random===1){
+        console.log('same')
+    }
+    else if(random===0){
+        console.log('your toss is head , but my toss tile')
+    }
+    alert('Your toss is tail')">Tail</button>
+</body>
+</html>

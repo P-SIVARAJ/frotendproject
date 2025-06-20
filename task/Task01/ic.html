@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+        .but1{
+            background-color: red;
+            color: white;
+        }
+        button{
+            margin-top: 20px;
+            border: none;
+            border-radius: 20px;
+            height: 30px;
+            width: 80px;
+        }
+    </style>
+</head>
+<body>
+    
+    <button onclick="button1()" class="button1">Gaming</button>
+    <button onclick="button2()" class="button2">Tech</button>
+    <button onclick="button3()" class="button3">Music</button>
+ 
+</body>
+<script>
+    let gam=document.querySelector(".button1");
+    function button1(){
+        if(gam.innerText=="Gaming"){
+            gam.innerText="Gamings";
+            gam.classList.add("but1");
+        }
+        else{
+             gam.innerText="Gaming";
+            gam.classList.remove("but1");
+        }
+    }
+    
+
+    let tech=document.querySelector(".button2");
+    function button2(){
+        if(tech.innerText=="Tech"){
+            tech.innerText="Techs";
+            tech.classList.add("but1");
+        }
+        else{
+             tech.innerText="Tech";
+            tech.classList.remove("but1");
+        }
+    }
+
+
+
+    let music=document.querySelector(".button3");
+    function button3(){
+        if(music.innerText=="Music"){
+            music.innerText="Musics";
+            music.classList.add("but1");
+        }
+        else{
+             music.innerText="Music";
+             music.classList.remove("but1");
+        }
+    }
+</script>
+</html>
