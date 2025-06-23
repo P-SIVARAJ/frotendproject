@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="button" onclick="siva()">click me</button>
+    <div id="div"></div>
+</body>
+<script> 
+    const url='https://dog.ceo/api/breeds/image/random';
+    let btn=document.getElementById("button");
+    let divElement=document.getElementById("div");
+    function siva(){
+     fetch(url).then(response=>response.json())
+     .then(json=> divElement.innerHTML=`<img src=${json.message}>`);
+      
+    
+}
+</script>
+</html>

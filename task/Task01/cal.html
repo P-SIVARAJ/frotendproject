@@ -6,32 +6,76 @@
     <title>Document</title>
     <style>
         body{
-            margin: 20px;
-            padding: 20px;
+            margin: 0px;
+            padding: 0px;
+        }
+        .but1{
+            background-color: red;
+            color: white;
         }
         button{
-            background-color: green;
-            color: white;
-            border-radius: 20px;
+            margin-top: 20px;
             border: none;
+            border-radius: 20px;
+            height: 30px;
+            width: 80px;
         }
     </style>
 </head>
 <body>
-    <input type="text" >
-    <button onclick="cal()">calculate</button>
-<div class="cal">
-
-</div>
+    
+    <button onclick="button1()" class="button1">Gaming</button>
+    <button onclick="button2()" class="button2">Tech</button>
+    <button onclick="button3()" class="button3">Music</button>
+ 
 </body>
 <script>
-    let val=document.querySelector("input").value  ;
-    function cal(){
-        if(val>0){
-            
+    let gam=document.querySelector(".button1").innerText;
+    function button1(){
+         music="siva";
+         tech="siva";
+        if(gam==="Gaming"){
+            gam.classList.add("but1");
+             gam.button3();
+             gam.button2();
         }
         else{
+           
+            gam.classList.remove("but1");
+        }
+    }
+    
 
+    let tech=document.querySelector(".button2").innerText;
+    function button2(){
+        gam="siva";
+        music="siva";
+        if(tech==="Tech"){
+            tech.classList.add("but1");
+             tech.button1();
+             tech.button3();
+        }
+        else{
+            
+            tech.classList.remove("but1");
+        }
+    }
+
+
+
+    let music=document.querySelector(".button3").innerText;
+    function button3(){
+        tech="siva";
+        gam="siva";
+        if(music==="Music"){
+           
+            music.classList.add("but1");
+            music.button1();
+             music.button2();
+        }
+        else{
+            
+             music.classList.remove("but1");
         }
     }
 </script>
