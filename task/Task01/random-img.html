@@ -15,7 +15,7 @@
     let divElement=document.getElementById("div");
     function siva(){
      fetch(url).then(response=>response.json())
-     .then(json=> divElement.innerHTML=`<img src=${json.message}>`);
+     .then(json=> divElement.innerHTML=`<img src=${json.message} width: 100 height: 100;>`);
       
     
 }
