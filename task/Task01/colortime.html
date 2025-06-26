@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 100px;
+        }
+        .con{
+            border: 2px solid black;
+            height: 300px;
+            width: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .s1{
+             display: flex;
+    gap: 12.59rem;
+        }
+        .a1{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="con">
+      <div class="s1">
+          <button class="a1" id="o1">dic</button>
+          <button class="a1" id="in">1</button>
+          <button class="a1" id="o2">inc</button>
+          </div>
+    </div>
+</body>
+<script>
+     let btn1=document.getElementById("o1");
+     let btn2=document.getElementById("o2");
+     let input=document.getElementById("in");
+      console.log(input);
+      i=1;
+     btn1.onclick=()=>{
+        if(i>1&&i<=4){
+            i=i-1;
+            console.log(i);
+            input.innerHTML=`<h1>${i}</h1>`;
+            
+        }
+     }
+     btn2.onclick=()=>{
+        if(i<4&&i>=1){
+            i=i+1;
+            console.log(i);
+            input.innerHTML=`<h1>${i}</h1>`;
+        }
+     }
+</script>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 100px;
+        }
+        .con{
+            border: 2px solid black;
+            height: 300px;
+            width: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           
+        }
+        .s2{
+             display: flex;
+    gap: 28rem;
+        }
+        .a1{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: none;
+        }
+        .m1{
+             height: 300px;
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div id="s1" class="con tex">
+      <div  class="s2">
+          <button class="a1" id="o1"><--</button>
+          <button class="a1" id="o2">--></button>
+          </div>
+    </div>
+    <!--<img src="./image/imgflower1.jpg" alt="Rose1" id="c1" class="m1">
+    <img src="./image/imgflower2.jpg" alt="Rose2" id="c2" class="m1">
+     <img src="./image/imgflower3.jpg" alt="Rose3" id="c3" class="m1">
+     <img src="./image/imgsnake1.jpg" alt="Snake1" id="c4" class="m1">
+-->
+</body>
+<script>
+    let cla=document.getElementById(s1);
+     let btn1=document.getElementById("o1");
+     let btn2=document.getElementById("o2");
+     const we1=`./image/imgflower1.jpg`;
+     const we2=`./image/imgflower2.jpg`;
+     const we3=`./image/imgflower3.jpg`;
+     const we4=`./image/imgsnake1.jpg`;
+      function call(){
+          if(i===1){
+            clas.innerHTML=`<img src='${we1}' >`;
+          }
+          else if(i===2){
+             cla.innerHTML=`<img src='${we2}'>`;
+          }
+          else if(i===3){
+             
+            cla.innerHTML=`<img src='${we3}'>`;
+          }
+          else if(i===4){
+             cla.innerHTML=`<img src='${we4}'>`;
+          }
+        }
+      i=1;
+     btn1.onclick=()=>{
+        if(i>1&&i<=4){
+            i--;
+             console.log(i);
+            call();
+           
+        }
+     }
+     btn2.onclick=()=>{
+        if(i<4&&i>=1){
+            i++
+             console.log(i);
+           call();
+        }
+     }
+    
+</script>
+</html>

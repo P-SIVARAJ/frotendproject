@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="se">
+    <button id="search">search</button>
+    <button id="random-btn" >click me</button>
+    <h1 id="h1"></h1>
+    <div id="details"></div>
+</body>
+<script >
+    const accesstoken="10223569763528853";
+const URL=`https://www.superheroapi.com/api.php/${accesstoken}`;
+let buttonElement=document.getElementById("random-btn");
+let divElement=document.getElementById("details");
+let input=document.getElementById("se");
+let srcbtn=document.getElementById("search");
+let name=document.getElementById("h1");
+buttonElement.onclick = () => {
+  let rand = getRandom();
+  console.log("Random",rand);
+  fetch(`${URL}/${rand}`).
+  then((response) => response.json())
+   .then((data) => (siva(data)));
+    //.then((data) =>divElement.innerHTML =`<img src='${data.image.url}' height=300 width=300>`);
+}
+  function siva(value){
+    let name=`<h1>${value.name}</h1>`;
+    let img=`<img src='${value.img.url}'>`;
+    let keys=Object.keys(value.powerstates)
+    .map((key)=>{
+      return `<p><b>${key.toUpperCase()}</b> : 
+        ${ value.powerstates
+        }
+    `})
+
+  }
+function getRandom() {
+  let count = 731;
+  let random = Math.floor(Math.random() * count) + 1;
+ return random;
+  
+}
+srcbtn.onclick=()=>{
+  let inputdiv=input.value;
+     fetch(`${URL}/search/${inputdiv}`)
+   .then((response) => response.json())
+  .then((data1) => (siva(data1)));
+  // .then((data1) =>divElement.innerHTML =`<img src='${data1.results[0].image.url}'  height=300 width=300 >`);
+      
+}
+</script>
+</html>

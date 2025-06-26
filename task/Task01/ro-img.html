@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width:500px;
+    height:350px;
+    margin:100px auto;
+    border:1px black;
+    box-shadow: 5px 5px 5px 5px grey;
+    position:relative;
+}
+.contain1{
+    position:absolute;
+    left:0;
+    top:150px;
+    background-color: black;
+    border-radius: 50%;
+    height:50px;
+    width:50px;
+    color: white;
+    cursor:pointer;
+}
+.contain2{
+    position:absolute;
+    right:0;
+    top:150px;
+    background-color: black;
+    border-radius: 50%;
+    height:50px;
+    width:50px;
+    color: white;
+    cursor:pointer;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+      
+      <button class="contain1" onclick="left()" ><</button>
+      <img id="image" src="../images/img 1.jpeg" height="350" width="500">
+      <button class="contain2"onclick="right()" >></button>
+    </div>
+</body> 
+<script>
+const images=['./image/imgflower1.jpg','./image/imgflower2.jpg','./image/imgflower3.jpg','./image/imgsnake1.jpg'];
+let imgindex=0;
+const imageElement=document.getElementById('image');
+function showimg(index){
+    imageElement.src=images[index];
+}
+setInterval(()=>{
+    imgindex=(imgindex+1)%images.length;
+    showimg(imgindex);
+},3000);
+function right(){
+    imgindex=(imgindex + 1) % images.length;
+    showimg(imgindex);
+}
+function left(){
+    imgindex=(imgindex - 1 + images.length)%images.length;
+    showimg(imgindex);
+}
+</script>
+</html>
